@@ -23,11 +23,6 @@ document.querySelector("#tip_50").addEventListener("click", () => {
     tip = 50;
 });
 
-
-
-
-
-
 bill.addEventListener("input", () => {
     total_per_person.textContent = ((parseFloat(bill.value) + ((parseFloat(bill.value) * tip / 100))) / people.value).toFixed(2);
     tip_per_person.textContent = (((parseFloat(bill.value) * tip) / 100) / people.value).toFixed(2);
@@ -36,6 +31,4 @@ people.addEventListener("input", () => {
     total_per_person.textContent = ((parseFloat(bill.value) + ((parseFloat(bill.value) * tip / 100))) / people.value).toFixed(2);
     tip_per_person.textContent = (((parseFloat(bill.value) * tip) / 100) / people.value).toFixed(2);
 });
-// tip_per_person.textContent = (((bill * tip) / 100) / people).toFixed(2);
-// total_per_person.textContent = ((bill + (bill * tip / 100)) / people).toFixed(2);
 
