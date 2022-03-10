@@ -39,3 +39,11 @@ document.querySelector("#tip_50").addEventListener("click", () => {
     total_per_person.textContent = ((parseFloat(bill.value) + ((parseFloat(bill.value) * tip / 100))) / people.value).toFixed(2);
     tip_per_person.textContent = (((parseFloat(bill.value) * tip) / 100) / people.value).toFixed(2);
 });
+
+document.querySelector("#reset").addEventListener("click", () => {
+    total_per_person.textContent = "$0.00";
+    tip_per_person.textContent = "$0.00";
+    document.querySelectorAll(".input_container").forEach(input => {
+        input.value = "";
+    });
+});
