@@ -10,6 +10,14 @@ document.querySelectorAll(".input_container").forEach(input => {
     });
 });
 
+document.querySelectorAll(".input_container").forEach(input => {
+    input.addEventListener("keypress", e => {
+        if (!/[0-9\./]+/.test(e.key)) { //PREVENTS FROM TYPING CHARACTERS WHICH ARE DIFFERENT THAN 0-9 AND .
+            e.preventDefault();
+        };
+    });
+});
+
 document.querySelector("#custom").addEventListener("input", () => {
     total_per_person.textContent = ((parseFloat(bill.value) + ((parseFloat(bill.value) * document.querySelector("#custom").value / 100))) / people.value).toFixed(2);
     tip_per_person.textContent = (((parseFloat(bill.value) * document.querySelector("#custom").value) / 100) / people.value).toFixed(2);
