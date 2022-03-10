@@ -1,0 +1,42 @@
+.tip_label {
+    position: relative;
+
+    input[type="radio"] {
+        width: 6rem;
+        height: 2rem;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        // top: 1.5rem;
+    
+        &:checked {
+            + .tip_box {
+                background-color: $strong-cyan;
+                transition: .3s;
+                
+                span {
+                    color: $very-dark-cyan;
+                    transition: .3s;
+                }
+            }
+        }    
+
+        &:hover {
+            + .tip_box {
+                background-color: $hover-bg;
+                transition: .3s;
+            }
+        }
+    }
+    
+    .tip_box {
+        border-radius: .35rem;
+        width: 6rem;
+        height: 2rem;
+        background-color: $very-dark-cyan;
+        color: $white;
+        text-align: center;
+        display: grid;
+        place-content: center;
+    }
+}

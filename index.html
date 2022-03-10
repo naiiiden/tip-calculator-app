@@ -11,14 +11,52 @@
   Bill
   <form action="">
     <input type="text" name="text" id="bill" class="bill input_container" placeholder="0.00" autocomplete="off">
-  </form>
-  Select Tip %
+    <br>
+    Select Tip %
   <br>
-  <button id="tip_5">5%</button>
+  <!-- <button id="tip_5">5%</button>
   <button id="tip_10">10%</button>
   <button id="tip_15">15%</button>
   <button id="tip_25">25%</button>
-  <button id="tip_50">50%</button>
+  <button id="tip_50">50%</button> -->
+  
+    
+    <label for="tip5" class="tip_label">
+      <input type="radio" class="tip tip_5" name="tip" id="tip_5">
+      <div class="tip_box">
+        <span>5%</span>  
+      </div>
+    </label>
+
+    <label for="tip10" class="tip_label">
+      <input type="radio" class="tip tip_10" name="tip" id="tip_10">
+      <div class="tip_box">
+        <span>10%</span>
+      </div>
+    </label>
+
+    <label for="tip15" class="tip_label">
+      <input type="radio" class="tip tip_15" name="tip" id="tip_15" checked>
+      <div class="tip_box">
+        <span>15%</span>
+      </div>
+    </label>
+
+    <label for="tip25" class="tip_label">
+      <input type="radio" class="tip tip_25" name="tip" id="tip_25">
+      <div class="tip_box">
+        <span>25%</span>
+      </div>
+    </label>
+
+    <label for="tip50" class="tip_label">
+      <input type="radio" class="tip tip_50" name="tip" id="tip_50">
+      <div class="tip_box">
+        <span>50%</span>
+      </div>
+    </label>
+  
+
   <input type="text" id="custom" class="custom_tip input_container" placeholder="Custom" autocomplete="off"></input>
   <br>
   Number of People
@@ -33,7 +71,7 @@
   / person
   <p id="total_per_person">$0.00</p>
   <button class="reset" id="reset" disabled>Reset</button>
-  
+  </form>
   <script src="script/script.js"></script>
 </body>
 </html>

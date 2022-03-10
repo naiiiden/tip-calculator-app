@@ -17,4 +17,46 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.tip_label {
+  position: relative;
+}
+
+.tip_label input[type="radio"] {
+  width: 6rem;
+  height: 2rem;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.tip_label input[type="radio"]:checked + .tip_box {
+  background-color: #26c0ab;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tip_label input[type="radio"]:checked + .tip_box span {
+  color: #00494d;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tip_label input[type="radio"]:hover + .tip_box {
+  background-color: #a1e8e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tip_label .tip_box {
+  border-radius: .35rem;
+  width: 6rem;
+  height: 2rem;
+  background-color: #00494d;
+  color: white;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
 /*# sourceMappingURL=style.css.map */
