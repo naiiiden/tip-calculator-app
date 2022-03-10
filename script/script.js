@@ -4,6 +4,7 @@ let tip_per_person = document.querySelector("#tip_per_person");
 
 document.querySelectorAll(".input_container").forEach(input => {
     input.addEventListener("input", () => {
+        document.querySelector("#reset").disabled = (this.value === "");
         total_per_person.textContent = ((parseFloat(bill.value) + ((parseFloat(bill.value) * tip / 100))) / people.value).toFixed(2);
         tip_per_person.textContent = (((parseFloat(bill.value) * tip) / 100) / people.value).toFixed(2);
     });
