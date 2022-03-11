@@ -1,0 +1,185 @@
+h1 {
+    color: $very-dark-cyan;
+    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $light-grayish-cyan;
+
+}
+
+.main_container {
+    background-color: $very-light-grayish-cyan;
+    border-radius: 2rem 2rem 0 0;
+    
+    .bill_container {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 2rem 2rem;
+        position: relative;
+
+        label {
+            color: $dark-grayish-cyan;
+        }
+
+        .dollar {
+            width: .75rem;
+            position: absolute;
+            top: 4.75rem;
+            left: 2.5rem;
+            opacity: 75%;
+        }
+
+        .input_container {
+            font-family: inherit;
+            text-align: right;
+            padding: .25rem;
+            border: none;
+            background: $white;
+            font-size: 1.3rem;
+            color: $very-dark-cyan;
+            border: 2px solid transparent;
+            border-radius: .35rem;
+
+            &:hover {
+                border: 2px solid $strong-cyan;
+                transition: .2s;
+            }
+
+            &:focus {
+                border-color: $strong-cyan;
+                outline: 0;
+            }
+        }
+    }
+
+    .tip_container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: .5rem;
+
+        .select_tip {
+            color: $dark-grayish-cyan;
+        }
+
+        .custom_tip {
+            border-radius: .35rem;
+            text-align: right;
+            font-family: inherit;
+            color: $very-dark-cyan;
+            font-size: 1.25rem;
+            padding: .25rem;
+            border: 2px solid transparent;
+
+            &::placeholder {
+                color: $dark-grayish-cyan;
+            }
+
+            &:hover {
+                border: 2px solid $strong-cyan;
+                transition: .2s;
+            }
+
+            &:focus {
+                border-color: $strong-cyan;
+                outline: 0;
+            }
+        }
+
+        .labels_container {
+            display: grid;
+            gap: .75rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+    }
+    .people_container {
+        @extend .bill_container;
+
+        .person {
+            @extend .dollar;
+            top: 4.85rem;
+        }
+    }
+
+    .padding_container {
+        padding: 0 1rem 2rem 1rem;
+        
+        .price_container {
+            padding: 2rem 1rem;
+            background-color: $very-dark-cyan;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            .tip_per_person_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    color: $white;
+
+                    span {
+                        color: $grayish-cyan;
+                    }
+
+                    &:nth-child(2) {
+                        color: $strong-cyan;
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+
+            .total_per_person_container {
+                @extend .tip_per_person_container;
+            }
+
+            .reset {
+                background: $strong-cyan;
+                font-family: inherit;
+                text-transform: uppercase;
+                border: none;
+                border-radius: .25rem;
+                color: $very-dark-cyan;
+                padding: .25rem;
+                font-size: 1.25rem;
+                cursor: pointer;
+
+                &:hover {
+                    background: $hover-bg;
+                    transition: .2s;
+                }
+
+                &:disabled {
+                    opacity: 20%;
+                    cursor: default;
+
+                    &:hover {
+                        background: $strong-cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .mobile_bg_fix {
+        height: 50vh;
+        background-color: $very-light-grayish-cyan;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mobile_bg_fix {
+        display: none;
+    }
+}

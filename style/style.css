@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   position: relative;
   font-family: Space Mono, sans-serif;
+  background-color: #c5e4e7;
 }
 
 img {
@@ -18,13 +19,227 @@ img {
   height: auto;
 }
 
+h1 {
+  color: #00494d;
+  letter-spacing: .5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #c5e4e7;
+}
+
+.main_container {
+  background-color: #f4fafa;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.main_container .bill_container, .main_container .people_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+  padding: 2rem 2rem;
+  position: relative;
+}
+
+.main_container .bill_container label, .main_container .people_container label {
+  color: #5e7a7d;
+}
+
+.main_container .bill_container .dollar, .main_container .people_container .dollar, .main_container .people_container .person {
+  width: .75rem;
+  position: absolute;
+  top: 4.75rem;
+  left: 2.5rem;
+  opacity: 75%;
+}
+
+.main_container .bill_container .input_container, .main_container .people_container .input_container {
+  font-family: inherit;
+  text-align: right;
+  padding: .25rem;
+  border: none;
+  background: white;
+  font-size: 1.3rem;
+  color: #00494d;
+  border: 2px solid transparent;
+  border-radius: .35rem;
+}
+
+.main_container .bill_container .input_container:hover, .main_container .people_container .input_container:hover {
+  border: 2px solid #26c0ab;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main_container .bill_container .input_container:focus, .main_container .people_container .input_container:focus {
+  border-color: #26c0ab;
+  outline: 0;
+}
+
+.main_container .tip_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+  gap: .5rem;
+}
+
+.main_container .tip_container .select_tip {
+  color: #5e7a7d;
+}
+
+.main_container .tip_container .custom_tip {
+  border-radius: .35rem;
+  text-align: right;
+  font-family: inherit;
+  color: #00494d;
+  font-size: 1.25rem;
+  padding: .25rem;
+  border: 2px solid transparent;
+}
+
+.main_container .tip_container .custom_tip::-webkit-input-placeholder {
+  color: #5e7a7d;
+}
+
+.main_container .tip_container .custom_tip:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.main_container .tip_container .custom_tip::-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.main_container .tip_container .custom_tip::placeholder {
+  color: #5e7a7d;
+}
+
+.main_container .tip_container .custom_tip:hover {
+  border: 2px solid #26c0ab;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main_container .tip_container .custom_tip:focus {
+  border-color: #26c0ab;
+  outline: 0;
+}
+
+.main_container .tip_container .labels_container {
+  display: -ms-grid;
+  display: grid;
+  gap: .75rem;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.main_container .people_container .person {
+  top: 4.85rem;
+}
+
+.main_container .padding_container {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.main_container .padding_container .price_container {
+  padding: 2rem 1rem;
+  background-color: #00494d;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main_container .padding_container .price_container .tip_per_person_container, .main_container .padding_container .price_container .total_per_person_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_container .padding_container .price_container .tip_per_person_container p, .main_container .padding_container .price_container .total_per_person_container p {
+  color: white;
+}
+
+.main_container .padding_container .price_container .tip_per_person_container p span, .main_container .padding_container .price_container .total_per_person_container p span {
+  color: #7f9c9f;
+}
+
+.main_container .padding_container .price_container .tip_per_person_container p:nth-child(2), .main_container .padding_container .price_container .total_per_person_container p:nth-child(2) {
+  color: #26c0ab;
+  font-size: 1.75rem;
+}
+
+.main_container .padding_container .price_container .reset {
+  background: #26c0ab;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: .25rem;
+  color: #00494d;
+  padding: .25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.main_container .padding_container .price_container .reset:hover {
+  background: #a1e8e0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main_container .padding_container .price_container .reset:disabled {
+  opacity: 20%;
+  cursor: default;
+}
+
+.main_container .padding_container .price_container .reset:disabled:hover {
+  background: #26c0ab;
+}
+
+@media screen and (max-width: 1023px) {
+  .mobile_bg_fix {
+    height: 50vh;
+    background-color: #f4fafa;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile_bg_fix {
+    display: none;
+  }
+}
+
 .tip_label {
   position: relative;
 }
 
 .tip_label input[type="radio"] {
-  width: 6rem;
-  height: 2rem;
+  width: 100%;
+  height: 100%;
   position: absolute;
   opacity: 0;
   z-index: 2;
@@ -50,8 +265,8 @@ img {
 
 .tip_label .tip_box {
   border-radius: .35rem;
-  width: 6rem;
-  height: 2rem;
+  min-width: 7.5rem;
+  height: 2.75rem;
   background-color: #00494d;
   color: white;
   text-align: center;
