@@ -52,4 +52,5 @@ document.querySelector("#reset").addEventListener("click", () => {
     document.querySelectorAll(".input_container").forEach(input => {
         input.value = "";
     });
+    document.querySelector("#reset").disabled = true;
 });
