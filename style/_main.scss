@@ -203,6 +203,14 @@ h1 {
                 .reset {
                     margin-top: auto;
                 }
+
+                .tip_per_person_container {
+                    p {
+                        &:nth-child(2) {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
             }
         }
     }

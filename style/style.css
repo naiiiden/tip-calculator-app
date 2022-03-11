@@ -269,6 +269,9 @@ h1 {
   .main_container .padding_container .price_container .reset {
     margin-top: auto;
   }
+  .main_container .padding_container .price_container .tip_per_person_container p:nth-child(2), .main_container .padding_container .price_container .total_per_person_container p:nth-child(2) {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -329,5 +332,11 @@ h1 {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .tip_label {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

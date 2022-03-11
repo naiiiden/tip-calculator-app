@@ -42,3 +42,9 @@
         place-content: center;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .tip_label {
+        font-size: 1.5rem;
+    }
+}
