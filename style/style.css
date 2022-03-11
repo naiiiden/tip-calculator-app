@@ -146,6 +146,28 @@ h1 {
   top: 4.85rem;
 }
 
+.main_container .people_container .error_style {
+  border: 2px solid #ff525d;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main_container .people_container .error_style::-webkit-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .people_container .error_style:-ms-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .people_container .error_style::-ms-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .people_container .error_style::placeholder {
+  color: #ff525d;
+}
+
 .main_container .padding_container {
   padding: 0 1rem 2rem 1rem;
 }

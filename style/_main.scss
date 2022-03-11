@@ -102,6 +102,15 @@ h1 {
             @extend .dollar;
             top: 4.85rem;
         }
+
+        .error_style {
+            border: 2px solid hsl(356, 100%, 66%);
+            transition: .2s;
+
+            &::placeholder {
+                color: hsl(356, 100%, 66%);
+            }
+        }
     }
 
     .padding_container {
