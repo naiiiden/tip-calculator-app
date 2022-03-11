@@ -176,6 +176,38 @@ h1 {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    main {
+        height: 85vh;
+        display: grid;
+        place-content: center;
+    }
+    
+    .main_container {
+        border-radius: 2rem;
+        margin: auto;
+        width: 45rem;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+
+        .padding_container {
+            height: 28rem;
+            width: 80%;
+            padding: 0 1rem;
+
+            .price_container {
+                height: 100%;
+                padding: 2rem 1.5rem;
+                
+                .reset {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .mobile_bg_fix {
         height: 50vh;

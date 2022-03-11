@@ -238,6 +238,39 @@ h1 {
   background: #26c0ab;
 }
 
+@media screen and (min-width: 1024px) {
+  main {
+    height: 85vh;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .main_container {
+    border-radius: 2rem;
+    margin: auto;
+    width: 45rem;
+    height: 30rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_container .padding_container {
+    height: 28rem;
+    width: 80%;
+    padding: 0 1rem;
+  }
+  .main_container .padding_container .price_container {
+    height: 100%;
+    padding: 2rem 1.5rem;
+  }
+  .main_container .padding_container .price_container .reset {
+    margin-top: auto;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .mobile_bg_fix {
     height: 50vh;
@@ -265,6 +298,7 @@ h1 {
   position: absolute;
   opacity: 0;
   z-index: 2;
+  cursor: pointer;
 }
 
 .tip_label input[type="radio"]:checked + .tip_box {
