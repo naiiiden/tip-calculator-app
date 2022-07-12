@@ -73,6 +73,10 @@ document.querySelector("#custom").addEventListener("click", () => {
     document.querySelectorAll(".tip").forEach(tipButton => {
         tipButton.checked = false;
     });
+    if (document.querySelector("#custom").value != "") {
+        total_per_person.textContent = `$${((parseFloat(bill.value) + ((parseFloat(bill.value) * document.querySelector("#custom").value / 100))) / people.value).toFixed(2)}`;
+        tip_per_person.textContent = `$${(((parseFloat(bill.value) * document.querySelector("#custom").value) / 100) / people.value).toFixed(2)}`;
+    };
 });
 
 document.querySelectorAll(".tip").forEach(tipButton => {
