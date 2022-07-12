@@ -105,6 +105,7 @@ document.querySelector("#reset").addEventListener("click", () => {
     tip_per_person.textContent = "$0.00";
     document.querySelector("#people").placeholder = "0";
     document.querySelector("#people").classList.remove("error_style");
+    document.querySelector("#custom").style.borderColor = "transparent";
     document.querySelectorAll(".input_container").forEach(input => {
         input.value = "";
     });
