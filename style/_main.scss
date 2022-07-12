@@ -112,6 +112,10 @@ h1 {
             &::placeholder {
                 color: hsl(356, 100%, 66%);
             }
+
+            &:hover {
+                border: 2px solid hsl(356, 100%, 66%);
+            }
         }
     }
 
@@ -159,6 +163,7 @@ h1 {
                 padding: .25rem;
                 font-size: 1.25rem;
                 cursor: pointer;
+                transition: .2s;
 
                 &:hover {
                     background: $hover-bg;

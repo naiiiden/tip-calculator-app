@@ -8,10 +8,18 @@ document.querySelectorAll(".input_container").forEach(input => {
         if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
             total_per_person.textContent = "$0.00";
             tip_per_person.textContent = "$0.00";
-        } else if (document.querySelector("#people").value === "" || document.querySelector("#bill").value === "") {
+        } 
+        else if (document.querySelector("#people").value === "" || document.querySelector("#bill").value === "") {
             document.querySelector("#people").classList.add("error_style");
             document.querySelector("#people").placeholder = "Can't be zero";
-        } else {
+        } 
+        else if (document.querySelector("#bill").value !== "" && document.querySelector("#people").value === "")  {
+            document.querySelector("#people").style.borderColor = "#ff525d";
+        } 
+        else if (document.querySelector("#people").value === "") {
+            document.querySelector("#people").style.borderColor = "#ff525d";
+        } 
+        else {
             document.querySelector("#people").style.borderColor = "transparent";
             document.querySelector("#people").classList.remove("error_style");
             document.querySelector("#people").placeholder = "0";
@@ -25,6 +33,12 @@ document.querySelectorAll(".input_container").forEach(input => {
         };
     });
 });
+
+document.querySelector("#people").addEventListener("click", () => {
+    if (document.querySelector("#people").value === "") {
+        document.querySelector("#people").style.borderColor = "#ff525d";
+    }
+})
 
 document.querySelector("#custom").addEventListener("click", () => {
     document.querySelector("#custom").style.borderColor = "#26c0ab";

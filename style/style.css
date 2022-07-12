@@ -172,6 +172,10 @@ h1 {
   color: #ff525d;
 }
 
+.main_container .people_container .error_style:hover {
+  border: 2px solid #ff525d;
+}
+
 .main_container .padding_container {
   padding: 0 1rem 2rem 1rem;
 }
@@ -225,6 +229,8 @@ h1 {
   padding: .25rem;
   font-size: 1.25rem;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .main_container .padding_container .price_container .reset:hover {
