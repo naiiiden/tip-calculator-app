@@ -86,7 +86,7 @@ document.querySelectorAll(".tip").forEach(tipButton => {
 });
 
 document.querySelector("#custom").addEventListener("input", () => {
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
@@ -97,7 +97,7 @@ document.querySelector("#custom").addEventListener("input", () => {
 
 document.querySelector("#tip_5").addEventListener("click", () => {
     tip = 5;
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
@@ -107,7 +107,7 @@ document.querySelector("#tip_5").addEventListener("click", () => {
 });
 document.querySelector("#tip_10").addEventListener("click", () => {
     tip = 10;
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
@@ -117,7 +117,7 @@ document.querySelector("#tip_10").addEventListener("click", () => {
 });
 document.querySelector("#tip_15").addEventListener("click", () => {
     tip = 15;
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
@@ -127,7 +127,7 @@ document.querySelector("#tip_15").addEventListener("click", () => {
 });
 document.querySelector("#tip_25").addEventListener("click", () => {
     tip = 25;
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
@@ -137,7 +137,7 @@ document.querySelector("#tip_25").addEventListener("click", () => {
 });
 document.querySelector("#tip_50").addEventListener("click", () => {
     tip = 50;
-    if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
+    if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
     } else {
