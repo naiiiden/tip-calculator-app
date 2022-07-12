@@ -26,6 +26,13 @@ document.querySelectorAll(".input_container").forEach(input => {
     });
 });
 
+document.querySelector("#custom").addEventListener("click", () => {
+    document.querySelector("#custom").style.borderColor = "#26c0ab";
+    document.querySelectorAll(".tip").forEach(tipButton => {
+        tipButton.checked = false;
+    });
+});
+
 document.querySelector("#custom").addEventListener("input", () => {
     if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
         total_per_person.textContent = "$0.00";
