@@ -68,6 +68,8 @@ h1 {
   color: #00494d;
   border: 2px solid transparent;
   border-radius: .35rem;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .main_container .bill_container .input_container:hover, .main_container .people_container .input_container:hover {
@@ -105,6 +107,8 @@ h1 {
   font-size: 1.25rem;
   padding: .25rem;
   border: 2px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .main_container .tip_container .custom_tip::-webkit-input-placeholder {
@@ -302,6 +306,8 @@ h1 {
   opacity: 0;
   z-index: 2;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .tip_label input[type="radio"]:checked + .tip_box {

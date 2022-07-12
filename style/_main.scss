@@ -41,6 +41,7 @@ h1 {
             color: $very-dark-cyan;
             border: 2px solid transparent;
             border-radius: .35rem;
+            transition: .2s;
 
             &:hover {
                 border: 2px solid $strong-cyan;
@@ -72,6 +73,7 @@ h1 {
             font-size: 1.25rem;
             padding: .25rem;
             border: 2px solid transparent;
+            transition: .2s;
 
             &::placeholder {
                 color: $dark-grayish-cyan;
