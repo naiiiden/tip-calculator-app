@@ -46,6 +46,9 @@ document.querySelector("#bill").addEventListener("input", () => {
         document.querySelector("#bill").style.borderColor = "#ff525d";
         document.querySelector("#people").style.borderColor = "#ff525d";
     };
+    if (document.querySelector("#bill").value !== "") {
+        document.querySelector("#bill").style.borderColor = "transparent";
+    }
 });
 
 document.querySelector("#people").addEventListener("input", () => {
