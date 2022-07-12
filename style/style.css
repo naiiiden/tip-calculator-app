@@ -46,6 +46,32 @@ h1 {
   position: relative;
 }
 
+.main_container .bill_container .error_style, .main_container .people_container .error_style {
+  border: 2px solid #ff525d;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main_container .bill_container .error_style::-webkit-input-placeholder, .main_container .people_container .error_style::-webkit-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .bill_container .error_style:-ms-input-placeholder, .main_container .people_container .error_style:-ms-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .bill_container .error_style::-ms-input-placeholder, .main_container .people_container .error_style::-ms-input-placeholder {
+  color: #ff525d;
+}
+
+.main_container .bill_container .error_style::placeholder, .main_container .people_container .error_style::placeholder {
+  color: #ff525d;
+}
+
+.main_container .bill_container .error_style:hover, .main_container .people_container .error_style:hover {
+  border: 2px solid #ff525d;
+}
+
 .main_container .bill_container label, .main_container .people_container label {
   color: #5e7a7d;
 }
