@@ -33,6 +33,12 @@ document.querySelector("#custom").addEventListener("click", () => {
     });
 });
 
+document.querySelectorAll(".tip").forEach(tipButton => {
+    tipButton.addEventListener("click", () => {
+        document.querySelector("#custom").style.borderColor = "transparent";
+    });
+});
+
 document.querySelector("#custom").addEventListener("input", () => {
     if (document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") {
         total_per_person.textContent = "$0.00";
