@@ -82,6 +82,13 @@ document.querySelector("#custom").addEventListener("click", () => {
     };
 });
 
+document.querySelector("#custom").addEventListener("focus", () => {
+    if (document.querySelector("#custom").value != "") {
+        total_per_person.textContent = `$${((parseFloat(bill.value) + ((parseFloat(bill.value) * document.querySelector("#custom").value / 100))) / people.value).toFixed(2)}`;
+        tip_per_person.textContent = `$${(((parseFloat(bill.value) * document.querySelector("#custom").value) / 100) / people.value).toFixed(2)}`;
+    };
+});
+
 document.querySelectorAll(".tip").forEach(tipButton => {
     tipButton.addEventListener("click", () => {
         document.querySelector("#custom").style.borderColor = "transparent";
@@ -89,6 +96,10 @@ document.querySelectorAll(".tip").forEach(tipButton => {
 });
 
 document.querySelector("#custom").addEventListener("input", () => {
+    document.querySelector("#custom").style.borderColor = "#26c0ab";
+    document.querySelectorAll(".tip").forEach(tipButton => {
+        tipButton.checked = false;
+    });
     if ((document.querySelector("#bill").value === "" && document.querySelector("#people").value === "") || (document.querySelector("#bill").value === "" || document.querySelector("#people").value === "")) {
         total_per_person.textContent = "$0.00";
         tip_per_person.textContent = "$0.00";
