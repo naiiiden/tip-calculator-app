@@ -45,6 +45,9 @@ fieldset legend {
   padding: 2rem 2rem;
   position: relative;
 }
+.main_container .bill_container .bill-label, .main_container .people_container .bill-label {
+  color: #46585D;
+}
 .main_container .bill_container .error_style, .main_container .people_container .error_style {
   border: 2px solid hsl(356deg, 100%, 66%);
   transition: 0.2s;
@@ -97,7 +100,7 @@ fieldset legend {
   gap: 0.5rem;
 }
 .main_container .tip_container .select_tip {
-  color: hsl(186deg, 14%, 43%);
+  color: #46585D;
 }
 .main_container .tip_container .custom_tip {
   border-radius: 0.35rem;
@@ -129,6 +132,9 @@ fieldset legend {
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.main_container .people_container .people-label {
+  color: #46585D;
 }
 .main_container .people_container .person {
   top: 4.85rem;
