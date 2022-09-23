@@ -24,7 +24,7 @@
             }
         }    
 
-        &:hover {
+        &:hover, &:focus {
             + .tip_box {
                 background-color: $hover-bg;
                 transition: .3s;

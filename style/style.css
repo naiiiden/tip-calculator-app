@@ -266,7 +266,7 @@ fieldset legend {
   color: hsl(183deg, 100%, 15%);
   transition: 0.3s;
 }
-.tip_label input[type=radio]:hover + .tip_box {
+.tip_label input[type=radio]:hover + .tip_box, .tip_label input[type=radio]:focus + .tip_box {
   background-color: hsl(173deg, 61%, 77%);
   transition: 0.3s;
 }
