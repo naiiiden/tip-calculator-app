@@ -150,8 +150,8 @@ document.querySelector("#tip_50-percent").addEventListener("click", () => {
 });
 
 document.querySelector("#reset").addEventListener("click", () => {
-    tip = 15;
-    document.querySelector("#tip_15").checked = true;
+    tip = 5;
+    document.querySelector("#tip_5-percent").checked = true;
     total_per_person.textContent = "$0.00";
     tip_per_person.textContent = "$0.00";
     document.querySelector("#bill").placeholder = "0";
