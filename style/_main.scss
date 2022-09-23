@@ -70,8 +70,7 @@ fieldset {
             }
 
             &:focus {
-                border-color: $strong-cyan;
-                outline: 0;
+                outline: 2px solid $strong-cyan;
             }
         }
     }
@@ -106,8 +105,7 @@ fieldset {
             }
 
             &:focus {
-                border-color: $strong-cyan;
-                outline: 0;
+                outline: 2px solid $strong-cyan;
             }
         }
 

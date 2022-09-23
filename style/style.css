@@ -88,8 +88,7 @@ fieldset legend {
   transition: 0.2s;
 }
 .main_container .bill_container .input_container:focus, .main_container .people_container .input_container:focus {
-  border-color: hsl(172deg, 67%, 45%);
-  outline: 0;
+  outline: 2px solid hsl(172deg, 67%, 45%);
 }
 .main_container .tip_container {
   display: flex;
@@ -124,8 +123,7 @@ fieldset legend {
   transition: 0.2s;
 }
 .main_container .tip_container .custom_tip:focus {
-  border-color: hsl(172deg, 67%, 45%);
-  outline: 0;
+  outline: 2px solid hsl(172deg, 67%, 45%);
 }
 .main_container .tip_container .labels_container {
   display: grid;
