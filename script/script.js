@@ -1,4 +1,4 @@
-let tip = 15;
+let tip = 5;
 let total_per_person = document.querySelector("#total_per_person");
 let tip_per_person = document.querySelector("#tip_per_person");
 
