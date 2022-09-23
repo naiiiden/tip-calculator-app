@@ -27,6 +27,13 @@ h1 {
   background-color: hsl(185deg, 41%, 84%);
 }
 
+fieldset {
+  border: none;
+}
+fieldset legend {
+  margin-bottom: 0.5rem;
+}
+
 .main_container {
   background-color: hsl(189deg, 41%, 97%);
   border-radius: 2rem 2rem 0 0;

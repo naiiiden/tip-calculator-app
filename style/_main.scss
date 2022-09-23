@@ -8,6 +8,14 @@ h1 {
 
 }
 
+fieldset {
+    border: none;
+
+    legend {
+        margin-bottom: .5rem;
+    }
+}
+
 .main_container {
     background-color: $very-light-grayish-cyan;
     border-radius: 2rem 2rem 0 0;
