@@ -175,7 +175,7 @@ fieldset legend {
   color: hsl(0deg, 0%, 100%);
 }
 .main_container .padding_container .price_container .tip_per_person_container p span, .main_container .padding_container .price_container .total_per_person_container p span {
-  color: hsl(184deg, 14%, 56%);
+  color: #CDD9DA;
 }
 .main_container .padding_container .price_container .tip_per_person_container p:nth-child(2), .main_container .padding_container .price_container .total_per_person_container p:nth-child(2) {
   color: hsl(172deg, 67%, 45%);
@@ -187,7 +187,7 @@ fieldset legend {
   text-transform: uppercase;
   border: none;
   border-radius: 0.25rem;
-  color: hsl(183deg, 100%, 15%);
+  color: #002024;
   padding: 0.25rem;
   font-size: 1.25rem;
   cursor: pointer;
