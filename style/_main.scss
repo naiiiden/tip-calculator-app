@@ -184,9 +184,10 @@ fieldset {
                 cursor: pointer;
                 transition: .2s;
 
-                &:hover {
+                &:hover, &:focus {
                     background: $hover-bg;
                     transition: .2s;
+                    outline: 0;
                 }
 
                 &:disabled {

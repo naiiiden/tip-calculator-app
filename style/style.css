@@ -187,9 +187,10 @@ fieldset legend {
   cursor: pointer;
   transition: 0.2s;
 }
-.main_container .padding_container .price_container .reset:hover {
+.main_container .padding_container .price_container .reset:hover, .main_container .padding_container .price_container .reset:focus {
   background: hsl(173deg, 61%, 77%);
   transition: 0.2s;
+  outline: 0;
 }
 .main_container .padding_container .price_container .reset:disabled {
   opacity: 20%;
